@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>Drop-down menu design</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="menu-bar">
+      <ul>
+        <li class="active">
+          <a href="#"><i class="fa-solid fa-house"></i>Home</a>
+        </li>
+        <li><a href="#">About me</a></li>
+        <li>
+          <div class="dropdown">
+            <button onclick="Myfunction()" class="dropbtn">Contacts</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#">github</a>
+              <a href="#">whatsapp</a>
+              <a href="#">email</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
