@@ -14,10 +14,8 @@ body {
   position: fixed;
   display: inline-block;
   width: 100vw;
-  margin-right: 10vw;
   border-radius: 1vw;
-  background-color: #d61c4e;
-  margin: 1vw;
+  background-color: transparent;
 }
 
 .navbar a {
@@ -37,10 +35,10 @@ body {
 
 .dropdown .dropbtn {
   font-size: 16px;
+  padding: 0.5vw 2vw;
   border: none;
   outline: none;
   color: #a5c9ca;
-  padding: 0.5vw 2vw;
   background-color: inherit;
   font-family: inherit;
   margin: 1vw;
@@ -57,7 +55,7 @@ body {
 }
 @keyframes changeColor {
   from {
-    background-color: palevioletred;
+    background-color: transparent;
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
     color: #a5c9ca;
   }
@@ -104,6 +102,7 @@ body {
 }
 .name {
   width: 100%;
+  line-height: 1em;
   position: inline-block;
   margin-left: auto;
   margin-right: auto;
@@ -112,7 +111,16 @@ body {
   font-size: 56px;
   display: flex;
 }
+.description {
+  color: white;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  display: flex;
+}
 .about {
+  line-height: 1em;
   position: inline-block;
   margin-left: auto;
   margin-right: auto;
