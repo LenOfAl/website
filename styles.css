@@ -1,3 +1,4 @@
+
 *{ font-family: 'Bungee', cursive;
     padding:0;
     margin:0;
@@ -11,7 +12,6 @@ body
 .navbar {
     overflow: hidden;
     background-color: #2C3333;
-
     font-family: 'Bungee', cursive;
     padding-bottom: 1vw;
 }
@@ -19,7 +19,7 @@ body
 
 .navbar a {
     float:right;
-    font-size: min(2vw,24px);
+    font-size:16px;
     color: #A5C9CA;
 
     padding: 0.5vw 2vw;
@@ -37,7 +37,7 @@ body
 
 
 .dropdown .dropbtn {
-    font-size: min(2vw,24px);
+    font-size:16px;
     border: none;
     outline: none;
     color:#A5C9CA;
@@ -45,7 +45,6 @@ body
     background-color: inherit;
     font-family: inherit;
     margin: 1vw;
-    
     
 }
 
@@ -103,10 +102,6 @@ body
     
     
 }
-a.material-symbols-sharp{
-    opacity: 1;
-}
-
 .span-left{
     float: left;
 
@@ -126,3 +121,14 @@ div.invisible{
     cursor:pointer;
     color:#CA955C;
 }
+@media (max-width: 768px) {
+    .navbar a {
+        font-size: 1rem ;
+
+    }
+    }
+    .dropdown .dropbtn {
+        font-size: 1rem ;
+    }
+
+
