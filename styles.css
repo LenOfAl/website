@@ -1,9 +1,10 @@
 :root {
-  --background: #0b2027;
-  --menuText: #ffffff;
+  --background: #061a40;
+  --menuText: #ead2ac;
   --hoverMenuText: black;
-  --dropdownBackground: #4f5d75;
-  overflow: hidden;
+  --dropdownBackground: #d1dede;
+  --nameColor: #c58882;
+  /* overflow: hidden; */
 }
 html {
   scroll-behavior: smooth;
@@ -21,12 +22,13 @@ body {
   padding: 10px;
 }
 .left {
-  width: 25%;
-  margin-left: 20px;
+  width: 15%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .right {
-  width: 65%;
+  width: 70%;
 }
 .navbar {
   background-color: transparent;
@@ -40,7 +42,7 @@ body {
 
 .navbar a {
   float: right;
-  font-size: 16px;
+  font-size: 20px;
   color: var(--menuText);
 
   padding: 0.5vw 2vw;
@@ -54,7 +56,7 @@ body {
 }
 
 .dropdown .dropbtn {
-  font-size: 16px !important;
+  font-size: 20px !important;
   padding: 0.5vw 2vw;
   border: none;
   outline: none;
@@ -80,7 +82,7 @@ body {
     color: var(--menuText);
   }
   to {
-    background-color: #e7f6f2;
+    background-color: var(--menuText);
     box-shadow: 2vw 1vw 0px 0px rgba(0, 0, 0, 0.5);
     color: var(--hoverMenuText);
   }
@@ -90,7 +92,7 @@ body {
   display: none;
   float: right;
   position: absolute;
-  background-color: palevioletred;
+  background-color: var(--dropdownBackground);
   min-width: 10vw;
   box-shadow: 2vw 1vw 0px 0px rgba(0, 0, 0, 0.5);
   z-index: 1;
@@ -109,7 +111,7 @@ body {
 }
 
 .dropdown-content a:hover {
-  background-color: #e7f6f2;
+  background-color: var(--menuText);
   opacity: 1;
   box-shadow: 2vw 1vw 0px 0px rgba(0, 0, 0, 0.5);
 }
@@ -121,16 +123,14 @@ body {
   float: left;
 }
 .name {
-  position: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 15vw;
-  justify-content: center;
+  margin-top: 30vh;
+  margin-right: 5%;
+  justify-content: space-between;
   color: white;
-  font-size: 56px;
   display: inline-flex;
   font-family: "Bungee", cursive;
-  padding-bottom: 0px !important;
+  align-content: stretch;
+  font-size: 4vw;
 }
 .description {
   color: white;
@@ -161,18 +161,18 @@ div.invisible {
 .name:not(.invisible) div:hover,
 .about:not(.invisible) div:hover {
   cursor: crosshair;
-  animation: changeText 0.3s;
-  color: palevioletred;
+  animation: changeText 0.2s;
+  color: var(--nameColor);
   text-shadow: 2vw 1vw rgba(0, 0, 0, 0.5);
 }
 @keyframes changeText {
   from {
     text-shadow: 0vw 0vw #000000;
-    color: #a5c9ca;
+    color: white;
   }
   to {
     text-shadow: 2vw 1vw rgba(0, 0, 0, 0.5);
-    color: palevioletred;
+    color: var(--nameColor);
   }
 }
 .dropdown .dropbtn {
@@ -184,7 +184,7 @@ div.invisible {
   width: 100%;
 }
 .content {
-  padding: 16px;
+  padding-top: 16px;
 }
 .sticky + .content {
   padding-top: 60px;
@@ -192,13 +192,46 @@ div.invisible {
 img {
   display: inline-block;
   padding: 0px !important;
-  margin-top: 10vw;
+  margin-top: 15%;
   border-radius: 50%;
   box-shadow: 2vw 1vw 0px rgba(0, 0, 0, 0.5);
-  size: 10px;
+  width: max-content;
+  height: fit-content;
 }
 @media (max-width: 768px) {
-  html {
-    font-size: 50%;
+  .navbar {
+    display: none;
+  }
+  .column {
+    float: rigth;
+  }
+  .left {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+
+  .content {
+    padding: none;
+  }
+  .right {
+    width: 100%;
+    margin-top: 5%;
+    justify-content: center;
+  }
+  .name {
+    font-size: 28px;
+    margin-right: 0px;
+    justify-content: center;
+    padding-bottom: 0;
+  }
+  .description {
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+    width: 100%;
+  }
+  .about {
+    font-size: 20px;
   }
 }
