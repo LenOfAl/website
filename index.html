@@ -14,11 +14,17 @@
     />
 
     <link rel="stylesheet" href="test.js" />
+    <link rel="stylesheet" href="app.js" />
+    <script src="particles.js"></script>
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Bungee&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -54,74 +60,153 @@
         >
       </div>
     </div>
-    <div>
-      <img class="content" src="dp.jpg" alt="display_picture" />
-    </div>
-    <div class="name content">
-      <div>A</div>
-      <div>L</div>
-      <div>L</div>
-      <div>E</div>
-      <div>N</div>
-      <div class="invisible">d</div>
-      <div>J</div>
-      <div>O</div>
-      <div>S</div>
-      <div>E</div>
-      <div>P</div>
-      <div>H</div>
-      <div class="invisible">J</div>
-      <div>J</div>
-      <div>O</div>
-      <div>S</div>
-      <div>E</div>
-    </div>
-    <div class="description">Electrical Engineer</div>
-    <div id="aboutMe" class="content about">
-      <div>A</div>
-      <div>B</div>
-      <div>O</div>
-      <div>U</div>
-      <div>T</div>
-      <div class="invisible">E</div>
-      <div>M</div>
-      <div>E</div>
-    </div>
-    <div>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ab unde,
-        atque quas sit officiis qui, quasi quaerat obcaecati explicabo neque.
-        Voluptate ipsa autem, nam culpa velit animi iste. Velit!
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime vero non
-        nisi modi porro consequatur optio tenetur illo perferendis harum, sequi
-        obcaecati totam expedita aperiam voluptatum amet minima consectetur
-        error.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum ea quam,
-        voluptatem, illum voluptas tempora optio autem aut in excepturi, ut
-        suscipit aliquam atque aliquid dolore quidem nostrum distinctio?
-        Tempore?
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet iusto
-        ullam aut. Aspernatur veniam odio illum, debitis quam hic. Fuga ratione
-        sed dicta beatae repellat libero tempore eaque asperiores earum!
-      </p>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem,
-        sint praesentium? Sunt doloremque quod praesentium consequatur, ad et
-        omnis tempora impedit saepe repudiandae fugit facilis est minus dicta
-        debitis expedita?
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-        consequatur eos unde quo inventore eum suscipit, aut maxime quam
-        laboriosam nulla asperiores error omnis, voluptas accusamus beatae
-        tempore natus excepturi?
-      </p>
+    <div class="row">
+      <div>
+        <img class="content column left" src="dp.jpg" alt="display_picture" />
+      </div>
+      <div class="name content column right">
+        <div>A</div>
+        <div>L</div>
+        <div>L</div>
+        <div>E</div>
+        <div>N</div>
+        <div class="invisible">d</div>
+        <div>J</div>
+        <div>O</div>
+        <div>S</div>
+        <div>E</div>
+        <div>P</div>
+        <div>H</div>
+        <div class="invisible">J</div>
+        <div>J</div>
+        <div>O</div>
+        <div>S</div>
+        <div>E</div>
+      </div>
+      <div class="description right content">
+        <p id="me"></p>
+        Electrical Engineer
+      </div>
+      <div id="aboutMe" class="content about">
+        <div>A</div>
+        <div>B</div>
+        <div>O</div>
+        <div>U</div>
+        <div>T</div>
+        <div class="invisible">E</div>
+        <div>M</div>
+        <div>E</div>
+      </div>
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ab unde,
+          atque quas sit officiis qui, quasi quaerat obcaecati explicabo neque.
+          Voluptate ipsa autem, nam culpa velit animi iste. Velit!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime vero
+          non nisi modi porro consequatur optio tenetur illo perferendis harum,
+          sequi obcaecati totam expedita aperiam voluptatum amet minima
+          consectetur error.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum ea
+          quam, voluptatem, illum voluptas tempora optio autem aut in excepturi,
+          ut suscipit aliquam atque aliquid dolore quidem nostrum distinctio?
+          Tempore?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet iusto
+          ullam aut. Aspernatur veniam odio illum, debitis quam hic. Fuga
+          ratione sed dicta beatae repellat libero tempore eaque asperiores
+          earum!
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem,
+          sint praesentium? Sunt doloremque quod praesentium consequatur, ad et
+          omnis tempora impedit saepe repudiandae fugit facilis est minus dicta
+          debitis expedita?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+          consequatur eos unde quo inventore eum suscipit, aut maxime quam
+          laboriosam nulla asperiores error omnis, voluptas accusamus beatae
+          tempore natus excepturi?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet iusto
+          ullam aut. Aspernatur veniam odio illum, debitis quam hic. Fuga
+          ratione sed dicta beatae repellat libero tempore eaque asperiores
+          earum!
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem,
+          sint praesentium? Sunt doloremque quod praesentium consequatur, ad et
+          omnis tempora impedit saepe repudiandae fugit facilis est minus dicta
+          debitis expedita?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+          consequatur eos unde quo inventore eum suscipit, aut maxime quam
+          laboriosam nulla asperiores error omnis, voluptas accusamus beatae
+          tempore natus excepturi?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ab unde,
+          atque quas sit officiis qui, quasi quaerat obcaecati explicabo neque.
+          Voluptate ipsa autem, nam culpa velit animi iste. Velit!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime vero
+          non nisi modi porro consequatur optio tenetur illo perferendis harum,
+          sequi obcaecati totam expedita aperiam voluptatum amet minima
+          consectetur error.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum ea
+          quam, voluptatem, illum voluptas tempora optio autem aut in excepturi,
+          ut suscipit aliquam atque aliquid dolore quidem nostrum distinctio?
+          Tempore?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet iusto
+          ullam aut. Aspernatur veniam odio illum, debitis quam hic. Fuga
+          ratione sed dicta beatae repellat libero tempore eaque asperiores
+          earum!
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem,
+          sint praesentium? Sunt doloremque quod praesentium consequatur, ad et
+          omnis tempora impedit saepe repudiandae fugit facilis est minus dicta
+          debitis expedita?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+          consequatur eos unde quo inventore eum suscipit, aut maxime quam
+          laboriosam nulla asperiores error omnis, voluptas accusamus beatae
+          tempore natus excepturi?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet iusto
+          ullam aut. Aspernatur veniam odio illum, debitis quam hic. Fuga
+          ratione sed dicta beatae repellat libero tempore eaque asperiores
+          earum!
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem,
+          sint praesentium? Sunt doloremque quod praesentium consequatur, ad et
+          omnis tempora impedit saepe repudiandae fugit facilis est minus dicta
+          debitis expedita?
+        </p>
+        <div class="particles-js">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+            consequatur eos unde quo inventore eum suscipit, aut maxime quam
+            laboriosam nulla asperiores error omnis, voluptas accusamus beatae
+            tempore natus excepturi?
+          </p>
+        </div>
+      </div>
     </div>
   </body>
 </html>
