@@ -3,6 +3,7 @@
   --menuText: #ffffff;
   --hoverMenuText: black;
   --dropdownBackground: #4f5d75;
+  overflow: hidden;
 }
 html {
   scroll-behavior: smooth;
@@ -39,7 +40,7 @@ body {
 
 .navbar a {
   float: right;
-  font-size: 12px;
+  font-size: 16px;
   color: var(--menuText);
 
   padding: 0.5vw 2vw;
@@ -53,7 +54,7 @@ body {
 }
 
 .dropdown .dropbtn {
-  font-size: 12px !important;
+  font-size: 16px !important;
   padding: 0.5vw 2vw;
   border: none;
   outline: none;
@@ -133,11 +134,13 @@ body {
 }
 .description {
   color: white;
+  border-radius: 2vw;
   float: right;
   padding-top: 0px !important;
   text-align: right;
-  margin-right: 50px;
+  margin-right: 80px;
   font-size: 32px;
+  margin-bottom: 200px;
   font-family: "Open Sans", sans-serif;
 }
 .about {
@@ -160,7 +163,7 @@ div.invisible {
   cursor: crosshair;
   animation: changeText 0.3s;
   color: palevioletred;
-  text-shadow: 2vw 1vw #000000;
+  text-shadow: 2vw 1vw rgba(0, 0, 0, 0.5);
 }
 @keyframes changeText {
   from {
@@ -168,7 +171,7 @@ div.invisible {
     color: #a5c9ca;
   }
   to {
-    text-shadow: 2vw 1vw #000000;
+    text-shadow: 2vw 1vw rgba(0, 0, 0, 0.5);
     color: palevioletred;
   }
 }
@@ -190,7 +193,12 @@ img {
   display: inline-block;
   padding: 0px !important;
   margin-top: 10vw;
-  border-radius: 2vw;
-  box-shadow: 12px 6px 0px rgba(0, 0, 0, 0.5);
-  size: 50px;
+  border-radius: 50%;
+  box-shadow: 2vw 1vw 0px rgba(0, 0, 0, 0.5);
+  size: 10px;
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
 }
